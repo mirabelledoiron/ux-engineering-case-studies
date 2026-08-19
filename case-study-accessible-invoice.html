@@ -25,10 +25,11 @@
       <h1>Accessible invoice data, from Outlook to mobile.</h1>
       <p class="lede">A brittle email table became one reusable contract across Outlook, mobile, and assistive technology.</p>
       <dl class="hero-facts">
-        <div><dt>Role</dt><dd>Design + implementation</dd></div>
+        <div><dt>Role</dt><dd>Accessibility guidance + implementation</dd></div>
         <div><dt>Scope</dt><dd>Email, responsive, a11y</dd></div>
-        <div><dt>Result</dt><dd>High-adoption system pattern</dd></div>
+        <div><dt>Result</dt><dd>Cross-framework reuse</dd></div>
       </dl>
+      <p class="role-note">A product designer owned the visual design. I shaped the accessibility approach and implemented the responsive component.</p>
     </header>
 
     <section class="section" aria-labelledby="problem-title">
@@ -80,6 +81,31 @@
           <strong>Responsive rule</strong>
           <code>desktop by default → hide mobile from MSO → reveal mobile at ≤600px</code>
         </div>
+
+        <div class="architecture-block" aria-labelledby="architecture-title">
+          <div class="section-heading">
+            <p class="eyebrow">Technical architecture</p>
+            <h3 id="architecture-title">Production context, separated from this reconstruction.</h3>
+          </div>
+          <dl class="architecture-list">
+            <div>
+              <dt>Web Component</dt>
+              <dd>Provided the shared component API and framework-neutral behavior. Its production source and exact API are not included here.</dd>
+            </div>
+            <div>
+              <dt>React + Angular</dt>
+              <dd>Product teams consumed the shared custom element from both frameworks. Framework adapter details are not reproduced.</dd>
+            </div>
+            <div>
+              <dt>TypeScript validation</dt>
+              <dd>The original workflow included a validation script, but its source and exact assertions are unavailable. This reconstruction does not claim to recreate them.</dd>
+            </div>
+            <div>
+              <dt>Repository scope</dt>
+              <dd>This repository contains the sanitized HTML/CSS reconstruction of the responsive email and accessibility contract—not the original production system.</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
@@ -120,7 +146,7 @@
       <div class="container">
         <p class="eyebrow">06 · Impact</p>
         <h2 id="impact-title">A hard edge case became a trusted system capability.</h2>
-        <p class="impact-copy">The pattern became a high-adoption component.</p>
+        <p class="impact-copy">React and Angular product teams reused the shared Web Component.</p>
         <p class="takeaway"><strong>Takeaway:</strong> I turned client constraints into a reusable contract.</p>
       </div>
     </section>

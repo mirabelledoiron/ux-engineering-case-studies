@@ -195,6 +195,12 @@ pre {
   font-weight: 700;
 }
 
+.role-note {
+  max-width: 820px;
+  margin: 24px 0 0;
+  color: var(--cs-muted);
+}
+
 .summary-grid,
 .case-grid {
   display: grid;
@@ -293,6 +299,39 @@ pre {
 .contract-note code {
   color: var(--cs-muted);
   font-size: 14px;
+}
+
+.architecture-block {
+  margin-top: 48px;
+}
+
+.architecture-block .section-heading {
+  margin-bottom: 24px;
+}
+
+.architecture-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  gap: 16px;
+}
+
+.architecture-list div {
+  padding: 24px;
+  border: 1px solid var(--cs-border);
+  border-radius: 12px;
+  background: var(--cs-surface);
+  box-shadow: var(--cs-shadow);
+}
+
+.architecture-list dt {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.architecture-list dd {
+  margin: 0;
+  color: var(--cs-muted);
 }
 
 .clean-list,
@@ -549,7 +588,8 @@ pre {
   .before-after,
   .code-comparison,
   .doc-layout,
-  .hero-facts {
+  .hero-facts,
+  .architecture-list {
     grid-template-columns: 1fr;
   }
 
