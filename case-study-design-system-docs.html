@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Mirabelle Doiron designed design-system documentation as a shared product contract for designers, engineers, accessibility, and AI-assisted workflows.">
+  <title>Case study: Design-system documentation</title>
+  <link rel="stylesheet" href="./case-study.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to case study</a>
+  <nav class="site-nav" aria-label="Case study navigation">
+    <strong>Mirabelle Doiron</strong>
+    <div class="nav-links">
+      <a href="./case-studies-index.html">All case studies</a>
+      <a href="./case-study-accessible-invoice.html">Invoice tables</a>
+      <a aria-current="page" href="./case-study-design-system-docs.html">System documentation</a>
+      <a href="./case-study-ai-workflow.html">AI workflow</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero container">
+      <p class="eyebrow">Indeed · Design systems</p>
+      <h1>Documentation that behaves like product infrastructure.</h1>
+      <p class="lede">Scattered knowledge became a shared component contract for people and AI-assisted workflows.</p>
+      <dl class="hero-facts">
+        <div><dt>Role</dt><dd>Content model + workflow</dd></div>
+        <div><dt>Scope</dt><dd>Guidance, API, governance</dd></div>
+        <div><dt>Result</dt><dd>Dependable self-service</dd></div>
+      </dl>
+    </header>
+
+    <section class="section" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 · Problem</p>
+          <h2 id="problem-title">The system lived in people, not in the product.</h2>
+          <p>Fragmented guidance created repeated questions and inconsistent implementation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="constraints-title">
+      <div class="container split">
+        <div class="section-heading">
+          <p class="eyebrow">02 · Constraints</p>
+          <h2 id="constraints-title">One source had to serve multiple disciplines.</h2>
+        </div>
+        <article class="panel">
+          <ul class="check-list">
+            <li>Design + engineering utility</li>
+            <li>Stable through API change</li>
+            <li>Human + AI retrieval</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contract-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 · API / Contract</p>
+          <h2 id="contract-title">Each component page answered the same decisions.</h2>
+          <p>Use, states, accessibility, API, tokens, tests, and migration.</p>
+        </div>
+
+        <div class="doc-example">
+          <div class="doc-toolbar">
+            <strong>Global design system</strong>
+            <span>Component contract</span>
+          </div>
+          <div class="doc-layout">
+            <nav class="doc-sidebar" aria-label="Example component sections">
+              <a href="#overview">Overview</a>
+              <a href="#usage">Use / avoid</a>
+              <a href="#behavior">Behavior + states</a>
+              <a href="#accessibility">Accessibility</a>
+              <a href="#implementation">API + tokens</a>
+            </nav>
+            <div class="doc-content">
+              <p class="eyebrow">Component</p>
+              <h2 id="overview">Action button</h2>
+              <p>Initiates a user-controlled change.</p>
+
+              <section id="usage">
+                <h3>Use / avoid</h3>
+                <p>Actions use buttons; navigation uses links.</p>
+              </section>
+              <section id="behavior">
+                <h3>Behavior + states</h3>
+                <p>Define focus, loading, and recovery.</p>
+              </section>
+              <section id="accessibility">
+                <h3>Accessibility</h3>
+                <p>Require semantics, names, focus, and status.</p>
+              </section>
+              <section id="implementation">
+                <h3>API + tokens</h3>
+                <p>Reference variants, tokens, tests, and migration.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="accessibility-title">
+      <div class="container split">
+        <div class="section-heading">
+          <p class="eyebrow">04 · Accessibility</p>
+          <h2 id="accessibility-title">Accessibility became part of the contract.</h2>
+          <p>Explicit rules create a safer context boundary.</p>
+        </div>
+        <article class="panel">
+          <ul class="check-list">
+            <li>Semantics + names</li>
+            <li>Keyboard + focus</li>
+            <li>Loading + recovery</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="validation-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">05 · Validation</p>
+          <h2 id="validation-title">Real friction drove each iteration.</h2>
+        </div>
+        <ol class="flow flow-four">
+          <li><strong>1. Observe</strong><span>Questions + adoption gaps</span></li>
+          <li><strong>2. Structure</strong><span>Shared contract</span></li>
+          <li><strong>3. Review</strong><span>Design + code + a11y</span></li>
+          <li><strong>4. Improve</strong><span>Usage + contribution data</span></li>
+        </ol>
+        <div class="validation-signals" aria-label="Validation signals">
+          <span>Fewer repeated questions</span>
+          <span>Consistent implementation</span>
+          <span>Better contributions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-section" aria-labelledby="impact-title">
+      <div class="container">
+        <p class="eyebrow">06 · Impact</p>
+        <h2 id="impact-title">Teams gained a dependable path from discovery to delivery.</h2>
+        <p class="impact-copy">Knowledge became reusable and self-service.</p>
+        <p class="takeaway"><strong>Takeaway:</strong> I made system decisions portable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <div class="container footer-links">
+      <a href="./case-study-accessible-invoice.html">Previous: Accessible invoice tables</a>
+      <a href="./case-study-ai-workflow.html">Next: Human-reviewed AI workflow</a>
+    </div>
+  </footer>
+</body>
+</html>

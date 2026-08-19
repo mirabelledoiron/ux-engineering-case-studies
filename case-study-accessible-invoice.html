@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Mirabelle Doiron turned a complex invoice email into an accessible, reusable design-system pattern across Outlook, desktop, and mobile.">
+  <title>Case study: Accessible invoice tables</title>
+  <link rel="stylesheet" href="./case-study.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to case study</a>
+  <nav class="site-nav" aria-label="Case study navigation">
+    <strong>Mirabelle Doiron</strong>
+    <div class="nav-links">
+      <a href="./case-studies-index.html">All case studies</a>
+      <a aria-current="page" href="./case-study-accessible-invoice.html">Invoice tables</a>
+      <a href="./case-study-design-system-docs.html">System documentation</a>
+      <a href="./case-study-ai-workflow.html">AI workflow</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero container">
+      <p class="eyebrow">Indeed · UX engineering</p>
+      <h1>Accessible invoice data, from Outlook to mobile.</h1>
+      <p class="lede">A brittle email table became one reusable contract across Outlook, mobile, and assistive technology.</p>
+      <dl class="hero-facts">
+        <div><dt>Role</dt><dd>Design + implementation</dd></div>
+        <div><dt>Scope</dt><dd>Email, responsive, a11y</dd></div>
+        <div><dt>Result</dt><dd>High-adoption system pattern</dd></div>
+      </dl>
+    </header>
+
+    <section class="section" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 · Problem</p>
+          <h2 id="problem-title">The table stopped making sense when it stacked.</h2>
+          <p>Mobile stacking broke campaign, job, and price relationships.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="constraints-title">
+      <div class="container split">
+        <div class="section-heading">
+          <p class="eyebrow">02 · Constraints</p>
+          <h2 id="constraints-title">Email clients changed the design space.</h2>
+        </div>
+        <article class="panel">
+          <ul class="check-list">
+            <li>Outlook’s Word renderer</li>
+            <li>Limited mobile CSS</li>
+            <li>Duplicated markup, one meaning</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contract-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 · API / Contract</p>
+          <h2 id="contract-title">One relationship. Two renderings.</h2>
+          <p>Jobs retain campaign, label, and price across both renderings.</p>
+        </div>
+
+        <div class="render-grid" aria-label="Responsive invoice implementation">
+          <section class="render-window" aria-labelledby="desktop-render-title">
+            <h3 id="desktop-render-title">Desktop + Outlook <span>Shared headers</span></h3>
+            <iframe src="./indeed-invoice-email.html" title="Desktop invoice email rendering"></iframe>
+          </section>
+          <section class="render-window" aria-labelledby="mobile-render-title">
+            <h3 id="mobile-render-title">Mobile <span>Repeated context</span></h3>
+            <iframe class="mobile-render" src="./indeed-invoice-email.html" title="Mobile invoice email rendering"></iframe>
+          </section>
+        </div>
+
+        <div class="contract-note">
+          <strong>Responsive rule</strong>
+          <code>desktop by default → hide mobile from MSO → reveal mobile at ≤600px</code>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="accessibility-title">
+      <div class="container split">
+        <div class="section-heading">
+          <p class="eyebrow">04 · Accessibility</p>
+          <h2 id="accessibility-title">Context travels with the value.</h2>
+          <p>One invariant guides every implementation.</p>
+        </div>
+        <article class="panel">
+          <ul class="check-list">
+            <li>Logical source and reading order</li>
+            <li>Job and price remain one item</li>
+            <li>Mobile labels restore context</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="validation-title">
+      <div class="container split">
+        <div class="section-heading">
+          <p class="eyebrow">05 · Validation</p>
+          <h2 id="validation-title">Test the relationship, not only the render.</h2>
+        </div>
+        <article class="panel">
+          <ul class="check-list">
+            <li>Desktop + Outlook-safe markup</li>
+            <li>Mobile context and visibility rules</li>
+            <li>Assistive reading order</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section impact-section" aria-labelledby="impact-title">
+      <div class="container">
+        <p class="eyebrow">06 · Impact</p>
+        <h2 id="impact-title">A hard edge case became a trusted system capability.</h2>
+        <p class="impact-copy">The pattern became a high-adoption component.</p>
+        <p class="takeaway"><strong>Takeaway:</strong> I turned client constraints into a reusable contract.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <div class="container footer-links">
+      <a href="./case-studies-index.html">Back to all case studies</a>
+      <a href="./case-study-design-system-docs.html">Next: Design-system documentation</a>
+    </div>
+  </footer>
+</body>
+</html>
